@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="shirtTitle shirtDesc">
+  <title id="shirtTitle">Shirt Illustration</title>
+  <desc id="shirtDesc">Illustration placeholder for a shirt service.</desc>
+  <rect width="320" height="240" rx="28" fill="#f5ece0" />
+  <path d="M80 40l40 40 40-40 40 40 40-40" fill="none" stroke="#7e2b40" stroke-width="18" stroke-linecap="round" />
+  <path d="M80 40v160h160V40" fill="none" stroke="#7e2b40" stroke-width="18" stroke-linecap="round" />
+  <path d="M160 40v160" stroke="#7e2b40" stroke-width="18" stroke-linecap="round" />
+</svg>

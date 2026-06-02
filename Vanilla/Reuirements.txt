@@ -1,0 +1,174 @@
+﻿JS Tailors — Ichalkaranji
+
+Project summary:
+Build a polished static demo website for a local tailoring business and an admin dashboard demo. The website must be built with vanilla HTML, CSS, and JavaScript only, with no frameworks or backend.
+
+Primary goal:
+- Showcase a premium, trustworthy local tailoring business for men and boys.
+- Generate inquiries through WhatsApp and phone.
+- Provide a demo admin dashboard for managing products, styles, categories, and testimonials.
+
+Core constraints:
+- Use only vanilla HTML, CSS, and JavaScript.
+- No frontend frameworks or libraries.
+- No backend required.
+- Must be a static clickable demo.
+- Responsive for mobile and desktop.
+- Semantic, accessible HTML structure.
+- Maintain clean project structure.
+- Avoid generic SaaS styling.
+- Prioritize premium royal, traditional, trustworthy branding.
+- Local business: Ichalkaranji, Maharashtra, India.
+- Support English, Marathi, and Hindi via front-end translations.
+- Dark/light mode optional if it fits elegantly; otherwise prefer a premium light theme.
+
+Brand direction:
+- Business name: JS Tailors
+- Location: Ichalkaranji
+- Audience: Men and boys
+- Business type: Custom tailoring only
+- Tone: Traditional royal, elegant, premium, trustworthy, fast service
+- Visual palette: deep maroon/wine, warm cream/ivory, muted gold, rich dark text
+- Styling: subtle traditional luxury with modern polish
+- Avoid: loud gradients, neon, glassmorphism, AI/startup aesthetics
+
+Customer-facing website requirements:
+Must include a customer-facing site with the following sections or pages:
+  1. Home
+  2. Products and Services
+  3. Style Gallery
+  4. Testimonials
+  5. Contact
+
+Home section should include:
+- Premium hero area with business name, tagline, and CTA buttons
+- Value proposition focused on premium stitching, affordable pricing, and trust
+- Trust highlights: custom fit, men & boys tailoring, local reputation, fast service
+- Featured categories preview
+- Why choose us section
+- Testimonials preview
+- WhatsApp/contact CTA banner
+- Footer with business details
+
+Products and Services section:
+- Service cards for shirts, trousers, blazers, suits, sherwani, kurta, waistcoat, school/occasion wear
+- Short descriptions and starting-price placeholders
+- Badges such as Custom Fit, Fast Delivery, Premium Finish
+- Category filter UI if possible
+
+Style Gallery section:
+- Grid of outfit/style cards
+- Category filters like Formal, Wedding, Traditional, Casual, Boys
+- Cards include placeholder image, style name, category, short note
+- Optional click-to-expand or modal preview
+
+Testimonials section:
+- Customer testimonial cards with name, quote, rating stars
+- Trust-building happy customer section
+- Premium, believable styling
+
+Contact section:
+- Clear business contact details:
+  - Shop address
+  - Phone number
+  - WhatsApp number
+  - Google Maps embed placeholder
+  - Working hours
+  - Instagram and Facebook links
+- CTA buttons: Call now, WhatsApp now, Get directions
+- Inquiry form UI with fields: Name, Phone, Service needed, Preferred visit date, Message
+- Static front-end form is acceptable
+
+Navigation and UX:
+- Sticky header
+- Clear navbar CTA
+- Mobile menu
+- Language switcher for English / Marathi / Hindi
+- Smooth scrolling and elegant hover states
+- Responsive layout
+- Floating WhatsApp action button
+- Section navigation acceptable
+
+Admin dashboard demo requirements:
+Provide a separate admin dashboard demo with:
+  1. Login screen (mock login only)
+  2. Dashboard home with summary stats
+  3. Products management
+  4. Styles management
+  5. Categories management
+  6. Testimonials management
+
+Admin dashboard features:
+- Sidebar navigation
+- Top header bar
+- Search input
+- Summary cards
+- Table/list views
+- Add / Edit / Delete UI actions via modals or forms
+- Use mock in-memory JavaScript arrays only
+- No backend or real authentication
+- No localStorage unless necessary; runtime demo data is enough
+- Dynamic UI updates for add/edit/delete actions
+- Empty states and validation messages
+- Clean, efficient dashboard design without excessive decoration
+
+Demo data model:
+- Products: id, name, category, description, startingPrice, deliveryTime, featured, image
+- Styles: id, name, category, occasion, description, image
+- Categories: id, name, description
+- Testimonials: id, customerName, quote, rating, language
+
+Language support:
+- Implement front-end translations for key UI labels in English, Marathi, and Hindi
+- Keep translation structure easy to extend
+- Default language: English
+- Ensure navigation, buttons, section headings, and form labels update with language
+
+Technical implementation guidance:
+- Use files such as:
+  - customer-site.html
+  - admin-dashboard.html
+  - styles.css
+  - app.js
+  - admin.js
+- Reusable CSS variables for colors, spacing, typography, and shadows
+- Use semantic HTML elements: header, nav, main, section, footer
+- Include a custom SVG logo or brand mark
+- Use proper image placeholders and aspect ratios
+- Keep the design handcrafted, premium, and refined
+- Add subtle ornamental divider details or motifs where tasteful
+- Use cards, badges, and section layouts carefully
+- Avoid generic startup section structures unless customized elegantly
+
+Content tone and copy suggestions:
+- "Perfect fit. Premium finish. Honest pricing."
+- "Custom tailoring for men and boys in Ichalkaranji."
+- "From everyday elegance to wedding-ready stitching."
+- "Crafted for comfort, style, and confidence."
+
+Required placeholders:
+- Logo
+- Shop photos
+- Stitched outfit photos
+- Happy customer photos
+- Exact address
+- Phone
+- WhatsApp
+- Instagram
+- Facebook
+- Google Maps embed URL
+
+Code quality expectations:
+- Clean, well-structured code
+- Separation of concerns between HTML, CSS, and JS
+- Minimal and useful comments only
+- Organized CSS by section
+- Responsive breakpoints and mobile-first layout
+- Keyboard accessibility and visible focus states
+- Use loading="lazy" for gallery images
+- Avoid broken links and generic lorem ipsum content
+
+Final deliverable:
+- Deliver a complete static demo website and admin dashboard
+- Provide full code for all files
+- Ensure the project feels like a real premium tailor brand for an Indian city

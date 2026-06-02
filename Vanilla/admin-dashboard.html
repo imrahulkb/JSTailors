@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Tailors Admin Dashboard</title>
+  <meta name="description" content="Admin dashboard demo for JS Tailors." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="login-screen" class="admin-login">
+    <div class="admin-login-panel">
+      <div class="admin-brand">
+        <img src="assets/images/logo.svg" alt="JS Tailors Logo" />
+        <div>
+          <p style="font-weight:700; margin:0;">JS Tailors Admin</p>
+          <p style="margin:0; color:#6c5459;">Secure mock login for demo.</p>
+        </div>
+      </div>
+      <h1>Owner Login</h1>
+      <p>Use admin / tailor123 to access the dashboard.</p>
+      <form id="login-form">
+        <label for="admin-user">Username</label>
+        <input id="admin-user" type="text" required value="admin" />
+        <label for="admin-pass">Password</label>
+        <input id="admin-pass" type="password" required value="tailor123" />
+        <button type="submit" class="cta-btn">Sign In</button>
+        <p class="admin-message" id="login-message" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <div id="admin-app" class="hidden">
+    <div class="admin-layout">
+      <aside class="admin-panel admin-sidenav">
+        <div class="admin-brand">
+          <img src="assets/images/logo.svg" alt="JS Tailors Logo" />
+          <div>
+            <p style="font-weight:700; margin:0;">JS Tailors</p>
+            <p style="margin:0; color:#6c5459;">Admin Dashboard</p>
+          </div>
+        </div>
+        <nav class="admin-nav" aria-label="Admin navigation">
+          <a href="#section-overview">Overview</a>
+          <a href="#section-products">Products</a>
+          <a href="#section-styles">Styles</a>
+          <a href="#section-categories">Categories</a>
+          <a href="#section-testimonials">Testimonials</a>
+        </nav>
+      </aside>
+      <main>
+        <header class="admin-header">
+          <div>
+            <p style="margin:0; color:#6c5459; text-transform:uppercase; letter-spacing:0.2em; font-size:0.85rem;">Admin Panel</p>
+            <h1 style="margin:0.35rem 0 0;">Welcome back, owner</h1>
+          </div>
+          <div class="admin-search">
+            <input id="admin-search" type="search" placeholder="Search products, styles, customers..." aria-label="Admin search" />
+            <button class="cta-btn secondary" id="logout-button">Logout</button>
+          </div>
+        </header>
+
+        <section class="admin-summary">
+          <article class="admin-card">
+            <h3>Total Products</h3>
+            <p class="metric" id="products-count">0</p>
+          </article>
+          <article class="admin-card">
+            <h3>Total Styles</h3>
+            <p class="metric" id="styles-count">0</p>
+          </article>
+          <article class="admin-card">
+            <h3>Categories</h3>
+            <p class="metric" id="categories-count">0</p>
+          </article>
+          <article class="admin-card">
+            <h3>Testimonials</h3>
+            <p class="metric" id="testimonials-count">0</p>
+          </article>
+        </section>
+
+        <section id="section-overview" class="admin-section">
+          <h2>Dashboard Overview</h2>
+          <p>Manage demo products, styles, categories, and customer testimonials with in-memory data.</p>
+        </section>
+
+        <section id="section-products" class="admin-section">
+          <h2>Products Management</h2>
+          <div class="admin-card">
+            <table class="admin-table" aria-label="Products table">
+              <thead>
+                <tr><th>Name</th><th>Category</th><th>Price</th><th>Delivery</th><th>Featured</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="products-table-body"></tbody>
+            </table>
+          </div>
+          <div class="admin-form">
+            <h3 id="product-form-title">Add Product</h3>
+            <form id="product-form">
+              <label for="product-name">Name</label>
+              <input id="product-name" required />
+              <label for="product-category">Category</label>
+              <input id="product-category" required />
+              <label for="product-price">Starting Price</label>
+              <input id="product-price" type="number" min="0" required />
+              <label for="product-delivery">Delivery Time</label>
+              <input id="product-delivery" required />
+              <label for="product-image">Image URL</label>
+              <input id="product-image" placeholder="assets/images/shirt.svg" />
+              <label><input type="checkbox" id="product-featured" /> Featured</label>
+              <button type="submit" class="cta-btn">Save Product</button>
+              <p class="admin-message" id="product-form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <section id="section-styles" class="admin-section">
+          <h2>Styles Management</h2>
+          <div class="admin-card">
+            <table class="admin-table" aria-label="Styles table">
+              <thead>
+                <tr><th>Name</th><th>Category</th><th>Occasion</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="styles-table-body"></tbody>
+            </table>
+          </div>
+          <div class="admin-form">
+            <h3 id="style-form-title">Add Style</h3>
+            <form id="style-form">
+              <label for="style-name">Name</label>
+              <input id="style-name" required />
+              <label for="style-category">Category</label>
+              <input id="style-category" required />
+              <label for="style-occasion">Occasion</label>
+              <input id="style-occasion" required />
+              <label for="style-image">Image URL</label>
+              <input id="style-image" placeholder="assets/images/blazer.svg" />
+              <button type="submit" class="cta-btn">Save Style</button>
+              <p class="admin-message" id="style-form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <section id="section-categories" class="admin-section">
+          <h2>Categories Management</h2>
+          <div class="admin-card">
+            <table class="admin-table" aria-label="Categories table">
+              <thead>
+                <tr><th>Name</th><th>Description</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="categories-table-body"></tbody>
+            </table>
+          </div>
+          <div class="admin-form">
+            <h3 id="category-form-title">Add Category</h3>
+            <form id="category-form">
+              <label for="category-name">Name</label>
+              <input id="category-name" required />
+              <label for="category-description">Description</label>
+              <textarea id="category-description" rows="3" required></textarea>
+              <button type="submit" class="cta-btn">Save Category</button>
+              <p class="admin-message" id="category-form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <section id="section-testimonials" class="admin-section">
+          <h2>Testimonials Management</h2>
+          <div class="admin-card">
+            <table class="admin-table" aria-label="Testimonials table">
+              <thead>
+                <tr><th>Name</th><th>Quote</th><th>Rating</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="testimonials-table-body"></tbody>
+            </table>
+          </div>
+          <div class="admin-form">
+            <h3 id="testimonial-form-title">Add Testimonial</h3>
+            <form id="testimonial-form">
+              <label for="testimonial-name">Customer Name</label>
+              <input id="testimonial-name" required />
+              <label for="testimonial-quote">Quote</label>
+              <textarea id="testimonial-quote" rows="3" required></textarea>
+              <label for="testimonial-rating">Rating</label>
+              <input id="testimonial-rating" type="number" min="1" max="5" required />
+              <button type="submit" class="cta-btn">Save Testimonial</button>
+              <p class="admin-message" id="testimonial-form-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

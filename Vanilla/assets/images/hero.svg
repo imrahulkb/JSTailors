@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Tailoring Showcase</title>
+  <desc id="heroDesc">Illustration placeholder for a premium tailoring showcase.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8f0e3" />
+      <stop offset="100%" stop-color="#e4d2bb" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)" />
+  <rect x="140" y="120" width="500" height="420" rx="32" fill="#7e2b40" opacity="0.95" />
+  <rect x="650" y="160" width="420" height="420" rx="28" fill="#fff" opacity="0.9" />
+  <circle cx="850" cy="340" r="120" fill="#c99b59" opacity="0.75" />
+  <path d="M220 280c90-60 152-20 190 22 40 45 75 130 20 210" stroke="#f0e4cd" stroke-width="24" fill="none" stroke-linecap="round" />
+  <path d="M240 440c90 0 120-60 160-80 48-24 110 14 130 60" stroke="#f0e4cd" stroke-width="24" fill="none" stroke-linecap="round" />
+  <text x="120" y="620" fill="#fff" font-family="Georgia, serif" font-size="64">JS Tailors</text>
+</svg>

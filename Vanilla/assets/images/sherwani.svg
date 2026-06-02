@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="sherwaniTitle sherwaniDesc">
+  <title id="sherwaniTitle">Sherwani Illustration</title>
+  <desc id="sherwaniDesc">Illustration placeholder for sherwani service.</desc>
+  <rect width="320" height="240" rx="28" fill="#f5ece0" />
+  <path d="M90 40h140c-12 40-18 80-18 120-20 0-70 0-90 0-2-40-6-80-12-120z" fill="#7e2b40" opacity="0.18" />
+  <path d="M90 40c20 40 24 80 24 120v40h-24zM230 40c-20 40-24 80-24 120v40h24z" fill="none" stroke="#7e2b40" stroke-width="18" />
+  <path d="M130 60h60" stroke="#7e2b40" stroke-width="14" stroke-linecap="round" />
+  <path d="M140 100h40" stroke="#7e2b40" stroke-width="12" />
+</svg>

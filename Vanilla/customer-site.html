@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Tailors, Ichalkaranji</title>
+  <meta name="description" content="Premium custom tailoring for men and boys in Ichalkaranji. Royal, trustworthy, and affordable." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/images/logo.svg" />
+</head>
+<body>
+  <a href="https://wa.me/910000000000" class="wa-float" aria-label="WhatsApp Inquiry" target="_blank" rel="noreferrer noopener">
+    <img src="assets/images/wa.svg" alt="WhatsApp" />
+  </a>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo-area">
+        <img src="assets/images/logo.svg" alt="JS Tailors Logo" class="logo" />
+        <div>
+          <span class="brand-title">JS Tailors</span>
+          <span class="brand-location">Ichalkaranji</span>
+        </div>
+      </div>
+      <!-- <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#products" data-i18n="nav_products">Products</a></li>
+        <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+        <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul> -->
+      <!-- <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language switcher">
+          <button data-lang="en" class="active">EN</button>
+          <button data-lang="mr">MR</button>
+          <button data-lang="hi">HI</button>
+        </div>
+        <a href="#contact" class="cta-btn" data-i18n="cta_nav">Enquire Now</a>
+      </div> -->
+    </nav>
+  </header>
+
+  <main>
+    <section class="happy-customer-gallery" id="happy">
+      <div class="section-head">
+        <h3>Happy customers in their new fit</h3>
+        <p>Tap any photo to view the styling and confidence from the finished outfit.</p>
+      </div>
+      <div class="happy-gallery-grid"></div>
+    </section>
+
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow" data-i18n="hero_tag">Royal tailoring for modern men</span>
+        <h1 data-i18n="hero_title">Perfect fit. Premium finish. Honest pricing.</h1>
+        <p data-i18n="hero_sub">Custom tailoring for men and boys in Ichalkaranji.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="cta-btn" data-i18n="cta_hero">Book a Visit</a>
+          <a href="https://wa.me/910000000000" class="cta-btn secondary" target="_blank" rel="noreferrer noopener" data-i18n="cta_whatsapp">WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/images/hero.svg" alt="Elegant tailoring showcase" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="value-prop">
+      <div class="prop-grid">
+        <article class="prop-card">
+          <span class="icon">👔</span>
+          <h3 data-i18n="prop_custom_fit">Custom Fit</h3>
+          <p data-i18n="prop_custom_fit_desc">Tailored for your comfort, style, and confidence.</p>
+        </article>
+        <article class="prop-card">
+          <span class="icon">⏱️</span>
+          <h3 data-i18n="prop_fast_service">Fast Service</h3>
+          <p data-i18n="prop_fast_service_desc">Quick turnaround for every order.</p>
+        </article>
+        <article class="prop-card">
+          <span class="icon">⭐</span>
+          <h3 data-i18n="prop_trusted">Trusted Locally</h3>
+          <p data-i18n="prop_trusted_desc">Serving Ichalkaranji with pride and honesty.</p>
+        </article>
+        <article class="prop-card">
+          <span class="icon">💰</span>
+          <h3 data-i18n="prop_affordable">Affordable Premium</h3>
+          <p data-i18n="prop_affordable_desc">Fair pricing for premium stitching.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- <section class="featured-categories" id="products">
+      <div class="section-head">
+        <h2 data-i18n="featured_categories">Our Services</h2>
+        <p data-i18n="featured_sub">Royal tailoring crafted for every occasion.</p>
+      </div>
+      <div class="category-grid">
+        <article class="category-card">
+          <img src="assets/images/shirt.svg" alt="Tailored shirts" loading="lazy" />
+          <div class="category-copy">
+            <h3 data-i18n="cat_shirt">Shirts</h3>
+            <p data-i18n="cat_shirt_desc">Classic and modern shirts stitched to your exact fit.</p>
+            <div class="badges"><span>Custom Fit</span><span>Premium Finish</span></div>
+            <p class="price">Starting ₹499</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <img src="assets/images/trouser.svg" alt="Tailored trousers" loading="lazy" />
+          <div class="category-copy">
+            <h3 data-i18n="cat_trouser">Trousers</h3>
+            <p data-i18n="cat_trouser_desc">Perfect fit trousers for work, weddings, and daily wear.</p>
+            <div class="badges"><span>Custom Fit</span><span>Fast Delivery</span></div>
+            <p class="price">Starting ₹599</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <img src="assets/images/blazer.svg" alt="Tailored blazers" loading="lazy" />
+          <div class="category-copy">
+            <h3 data-i18n="cat_blazer">Blazers</h3>
+            <p data-i18n="cat_blazer_desc">Royal blazers designed for weddings and business events.</p>
+            <div class="badges"><span>Premium Finish</span><span>Custom Fit</span></div>
+            <p class="price">Starting ₹1999</p>
+          </div>
+        </article>
+        <article class="category-card">
+          <img src="assets/images/sherwani.svg" alt="Sherwani stitching" loading="lazy" />
+          <div class="category-copy">
+            <h3 data-i18n="cat_sherwani">Sherwani</h3>
+            <p data-i18n="cat_sherwani_desc">Elegant sherwanis for special occasions and celebrations.</p>
+            <div class="badges"><span>Traditional</span><span>Custom Fit</span></div>
+            <p class="price">Starting ₹2999</p>
+          </div>
+        </article>
+      </div>
+    </section> -->
+
+    <section class="why-choose-us">
+      <div class="section-head">
+        <h2 data-i18n="why_choose_us">Why Choose JS Tailors?</h2>
+        <p data-i18n="why_choose_sub">A premium tailoring experience with trusted local craftsmanship.</p>
+      </div>
+      <ul class="reason-list">
+        <li data-i18n="choose_quality">Premium quality fabrics & stitching</li>
+        <li data-i18n="choose_experience">Years of local experience</li>
+        <li data-i18n="choose_service">Personalized service for every customer</li>
+        <li data-i18n="choose_trust">Trusted by hundreds of happy customers</li>
+      </ul>
+    </section>
+
+    <section class="style-gallery" id="gallery">
+      <div class="section-head">
+        <h2 data-i18n="gallery_title">Style Gallery</h2>
+        <p data-i18n="gallery_sub">Explore curated styles and tailoring inspirations.</p>
+      </div>
+      <div class="gallery-filters" role="tablist" aria-label="Gallery filters">
+        <button class="active" data-filter="all" data-i18n="gallery_all">All</button>
+        <button data-filter="formal" data-i18n="gallery_formal">Formal</button>
+        <button data-filter="wedding" data-i18n="gallery_wedding">Wedding</button>
+        <button data-filter="traditional" data-i18n="gallery_traditional">Traditional</button>
+        <button data-filter="casual" data-i18n="gallery_casual">Casual</button>
+        <button data-filter="boys" data-i18n="gallery_boys">Boys</button>
+      </div>
+      <div class="gallery-grid"></div>
+      <div id="gallery-modal" class="modal" aria-hidden="true">
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <button class="modal-close" aria-label="Close gallery preview">×</button>
+          <img src="" alt="Style preview" id="modal-img" loading="lazy" />
+          <div class="modal-details">
+            <h3 id="modal-title"></h3>
+            <p id="modal-category"></p>
+            <p id="modal-note"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="section-head">
+        <h2 data-i18n="testimonials_title">Testimonials</h2>
+        <p data-i18n="testimonials_sub">Words from customers who trust our craft.</p>
+      </div>
+      <div class="testimonial-cards"></div>
+    </section>
+
+    
+
+    <section class="contact" id="contact">
+      <div class="section-head">
+        <h2 data-i18n="contact_title">Contact & Visit Us</h2>
+        <p data-i18n="contact_sub">We are located in the heart of Ichalkaranji for easy visits.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 data-i18n="contact_location">Shop Information</h3>
+          <p><strong data-i18n="contact_address">Address:</strong> <span id="shop-address">Market Road, Near Ganesh Mandir, Ichalkaranji</span></p>
+          <p><strong data-i18n="contact_phone">Phone:</strong> <a href="tel:+910000000000" id="shop-phone">+91 00000 00000</a></p>
+          <p><strong data-i18n="contact_whatsapp">WhatsApp:</strong> <a href="https://wa.me/910000000000" id="shop-wa">+91 00000 00000</a></p>
+          <p><strong data-i18n="contact_hours">Hours:</strong> <span id="shop-hours">Mon-Sat: 10am–8pm</span></p>
+          <!-- <div class="social-row">
+            <a href="#" aria-label="Instagram" class="social-link"><img src="assets/images/insta.svg" alt="Instagram" /></a>
+            <a href="#" aria-label="Facebook" class="social-link"><img src="assets/images/fb.svg" alt="Facebook" /></a>
+          </div> -->
+        </div>
+        <!-- <div class="contact-card map-card">
+          <h3 data-i18n="contact_map">Find Us</h3>
+          <div class="map-placeholder" id="map-placeholder">Google Maps embed placeholder</div>
+        </div> -->
+      </div>
+      <div class="contact-actions">
+        <a href="tel:+910000000000" class="cta-btn" data-i18n="cta_call">Call Now</a>
+        <a href="https://wa.me/910000000000" class="cta-btn secondary" target="_blank" rel="noreferrer noopener" data-i18n="cta_whatsapp">WhatsApp Now</a>
+        <a href="#" class="cta-btn" data-i18n="cta_directions">Get Directions</a>
+      </div>
+      <!-- <form class="inquiry-form" autocomplete="off">
+        <h3 data-i18n="form_title">Send an Inquiry</h3>
+        <label for="inq-name" data-i18n="form_name">Name</label>
+        <input type="text" id="inq-name" name="name" required />
+        <label for="inq-phone" data-i18n="form_phone">Phone</label>
+        <input type="tel" id="inq-phone" name="phone" required pattern="[0-9]{10}" placeholder="0000000000" />
+        <label for="inq-service" data-i18n="form_service">Service Needed</label>
+        <input type="text" id="inq-service" name="service" placeholder="Example: Sherwani fitting" />
+        <label for="inq-date" data-i18n="form_date">Preferred Visit Date</label>
+        <input type="date" id="inq-date" name="date" />
+        <label for="inq-message" data-i18n="form_message">Message</label>
+        <textarea id="inq-message" name="message" rows="4" placeholder="Share your stitching requirements"></textarea>
+        <button type="submit" class="cta-btn" data-i18n="form_submit">Submit</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form> -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrapper">
+      <div class="brand-footer">
+        <img src="assets/images/logo.svg" alt="JS Tailors Logo" />
+        <div>
+          <p><strong>JS Tailors, Ichalkaranji</strong></p>
+          <p data-i18n="footer_address">Market Road, Ichalkaranji, Maharashtra</p>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p data-i18n="footer_phone">Phone: +91 00000 00000</p>
+        <p data-i18n="footer_hours">Mon-Sat: 10am–8pm</p>
+        <p>&copy; 2026 JS Tailors. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" aria-label="Instagram"><img src="assets/images/insta.svg" alt="Instagram" /></a>
+        <a href="#" aria-label="Facebook"><img src="assets/images/fb.svg" alt="Facebook" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

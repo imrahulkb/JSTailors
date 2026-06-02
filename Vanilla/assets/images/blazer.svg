@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="blazerTitle blazerDesc">
+  <title id="blazerTitle">Blazer Illustration</title>
+  <desc id="blazerDesc">Illustration placeholder for blazer service.</desc>
+  <rect width="320" height="240" rx="28" fill="#f5ece0" />
+  <path d="M80 40h160l-24 160h-112z" fill="#7e2b40" opacity="0.18" />
+  <path d="M80 40l40 40 40-40 40 40 40-40" fill="none" stroke="#7e2b40" stroke-width="18" stroke-linecap="round" />
+  <path d="M120 80l-20 120h120l-20-120" fill="none" stroke="#7e2b40" stroke-width="18" />
+  <path d="M140 120l40 0" stroke="#7e2b40" stroke-width="16" stroke-linecap="round" />
+</svg>

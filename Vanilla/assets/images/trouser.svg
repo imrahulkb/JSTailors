@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-labelledby="trouserTitle trouserDesc">
+  <title id="trouserTitle">Trouser Illustration</title>
+  <desc id="trouserDesc">Illustration placeholder for trousers service.</desc>
+  <rect width="320" height="240" rx="28" fill="#f5ece0" />
+  <path d="M120 40h80v160h-80z" fill="#7e2b40" opacity="0.18" />
+  <path d="M120 40c-20 40-24 80-24 120v40h48v-160h-24zM200 40c20 40 24 80 24 120v40h-48v-160h24z" fill="none" stroke="#7e2b40" stroke-width="18" stroke-linecap="round" />
+  <path d="M120 120h80" stroke="#7e2b40" stroke-width="14" stroke-linecap="round" opacity="0.8" />
+</svg>
